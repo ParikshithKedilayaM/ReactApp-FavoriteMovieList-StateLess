@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import MovieCardsList from './MovieCardsList';
@@ -92,8 +92,7 @@ const movies = {
   },
 };
 
-class App extends Component {
-  render() {
+function App(props) {
     return (
       <div>
         <header className="App-header">
@@ -104,7 +103,6 @@ class App extends Component {
         <MovieCardsList profiles={profiles} movies={movies} users={users} />
       </div>
     );
-  }
 }
 
 export default App;
